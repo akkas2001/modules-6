@@ -1,36 +1,22 @@
 const express = require("express");
 const exports = express.Router();
-
-exports.get("/", (req,res) => {
-    res.send("server is it");
-})
-exports.post("/", (req,res) => {
-    res.send("server created");
-})
-exports.put ("/", (req,res) => {
-    res.send("server updated");
-})
-exports.delete("/", (req,res) => {
-    res.send("server delete");
-})
+exports.create = async (req, res) => {
+    res,send("create blog api");
+ };
 
 
+exports.read = async (req, res) => { 
+    res,send("read blog api");
+};
 
 
+exports.delete = async (req, res) => { 
+    res,send("delete blog api");
+};
 
 
+exports.update = async (req, res) => {
 
-// exports.get = async (req, res) => {
-//     res.send("Create Blog API")
-//  };
-// exports.post = async (req, res) => {
-//     res.send("Read Blog API")
-//  };
-//  exports.delete = async (req, res) => { 
-//      res.send("Update Blog API")
-//  };
-// exports.put = async (req, res) => { 
-//     res.send("delete Blog API")
-// };
-
-// module.exports = blogDetailsControllers;
+    res,send("update blog api");
+ };
+module.exports =exports;

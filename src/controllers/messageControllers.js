@@ -1,15 +1,22 @@
 const express = require("express");
 const exports = express.Router();
+exports.create = async (req, res) => {
+    res,send("create blog api");
+ };
 
-exports.get("/", (req,res) => {
-    res.send("server is it");
-})
-exports.post("/", (req,res) => {
-    res.send("server created");
-})
-exports.put ("/", (req,res) => {
-    res.send("server updated");
-})
-exports.delete("/", (req,res) => {
-    res.send("server delete");
-})
+
+exports.read = async (req, res) => { 
+    res,send("read blog api");
+};
+
+
+exports.delete = async (req, res) => { 
+    res,send("delete blog api");
+};
+
+
+exports.update = async (req, res) => {
+
+    res,send("update blog api");
+ };
+module.exports =exports;
